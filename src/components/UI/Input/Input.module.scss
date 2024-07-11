@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+* {
+    font-family: 'Viga', sans-serif;
+    box-sizing: border-box;
+}
+
+.InputCont {
+    position: relative;
+}
+
+
+.Input {  
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    border-bottom: 2px solid rgba($color: #303030, $alpha: 0.9);
+    font-weight: lighter;
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;    
+    
+}
+
+.LabelContBot {
+    position: absolute;
+    top: 20px;
+    transition: 0.3s;
+    font-size: 15px
+    
+}
+
+.LabelContTop {
+    position: absolute;
+    top: 0;
+    transition: 0.3s;
+    font-size: 12px
+}
+
+
+.LabelInput {
+    display: block;
+    color: #303030;
+}
+
+.ErrorLabel {
+    display: block;
+    font-size: 15px;
+    color: #7a0c00;
+    opacity: 0.8;
+}
+
+.AddInputPadding {
+    padding-top: 40px;
+}

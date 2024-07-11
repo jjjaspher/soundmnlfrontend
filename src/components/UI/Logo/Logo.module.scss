@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Title {
+    font-family: 'Audiowide', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.SpanTitle {
+    background-color: black;
+    color: #ef672a;
+    border-radius: 25px;
+}
+
+@media (max-width: 500px) {
+    .Title {
+        font-size: 15px;
+    }
+
+}

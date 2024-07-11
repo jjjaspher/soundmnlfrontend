@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.NavBarContainer {
+    position: relative;
+}
+
+.NavBarDefault {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    padding-top: 20px;  
+    background-color: transparent;
+    transition: 0.7s;
+}
+
+.NavBarShow {    
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    padding-top: 10px;
+    border-bottom: 2px solid rgba($color: #ffede6, $alpha: 0.5);;
+    background-color: rgba($color: #ffede6, $alpha: 0.9);
+    transition: 0.7s;
+}
+
+.NavBarUL {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    padding-right: 40px;        
+}
+
+.LogoCont {
+    position: absolute;
+    padding-top: 18px;
+    left: 70px; 
+
+}
+
+@media (max-width: 500px) {
+    .NavBarUL {
+        display: none;
+    }      
+
+    .LogoCont {
+        position: absolute;
+        padding-top: 18px;
+        left: 35px; 
+    
+    }     
+}
+
+@media (min-width: 500px) {
+    .NavBarMobile {
+        display: none;
+    }
+     
+}
+

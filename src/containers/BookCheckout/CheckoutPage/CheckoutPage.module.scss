@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color: #f55718, $alpha: 0.5);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../../../assets/images/instrumentsbg.jpg');
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+    } 
+      
+}
+
+.BookListContainer {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 500px;
+    
+
+}
+
+.ListContainer {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.ListContainer::-webkit-scrollbar {
+    width: 5px;
+}
+
+  
+.ListContainer::-webkit-scrollbar-track {    
+    background: transparent; 
+
+}
+
+.ListContainer::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba($color: #f8d0af, $alpha: 0.9); 
+}
+
+.ListContainer::-webkit-scrollbar-thumb:hover {
+    background:rgba($color: #f8c49a, $alpha: 0.9);
+  }
+
+.ScheduleList {
+    position: relative;
+    list-style: none;   
+}
+
+.RemoveTix {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.RemoveTix:hover {
+    font-size: 14px;
+}
+
+.TixContainer {
+    width: auto;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+.LeftTix {
+    position: relative;
+    align-items: center;
+    background-color: rgba($color: #f8d0af, $alpha: 0.9);
+    border-radius: 10px;
+    width: 260px;
+    padding: 10px;
+    border-right: 1px dotted #3b3b3b;
+}
+
+.RightTix {
+    position: relative;
+    background-color: rgba($color: #f8d0af, $alpha: 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    width: 340px;    
+}
+
+.BandImg {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    top: 30px;
+    left: 180px;
+    opacity: 0.4;
+}
+
+.TixImg {
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TimeSpan {
+    font-size: 14px;
+    color: #333131;
+}
+
+.CheckoutBtnCont {
+    float: right;
+}
+
+.CheckoutBtn {
+    margin-bottom: 10px;
+}
+
+.TotalPriceCont {
+    padding: 10px;
+    margin-bottom: 10px;    
+}
+
+.TotalPriceSpan {
+    font-size: 18px;
+}
+
+.Price {
+    font-size: 16px;
+    color: #3b3a3a;
+}
+
+.toastBtnCont {
+    display: flex;
+    justify-content: center;
+}
+
+.ToastMessage {
+    text-align: center;    
+}
+
+@media (max-width: 500px) {
+    .BookListContainer {
+        top: 300px;
+        width: 300px;
+        height: 400px;            
+    }
+
+    .LeftTix {
+        width: 200px;
+        height: 80px;
+    }
+
+    .RightTix {
+        width: 340px; 
+        height: 80px; 
+        padding-left: 10px;  
+    }
+
+    .ScheduleList > li{
+        font-size: 13px;
+    }
+
+    .TimeSpan {
+        font-size: 12px;
+        
+    }
+
+    .RemoveTix {
+        top: 0;
+        right: 5px;
+        padding: 0;      
+    }
+
+    .BandImg {
+        height: 30px;
+        width: 55px;
+        top: 42px;
+        left: 110px;
+        opacity: 0.4;
+    }
+
+    .TixImg {
+        height: 30px;
+        width: 72px;
+        top: 55px;
+        left: 50%;
+    }
+
+    .TotalPriceSpan {
+        font-size: 15px;        
+    }
+    
+    .Price {
+        font-size: 13px;
+    }  
+    
+    
+    .TotalPriceCont {
+        padding-left: 0; 
+        margin: 0;
+    }    
+}

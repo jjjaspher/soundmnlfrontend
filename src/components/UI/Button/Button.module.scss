@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Button {
+    border: none;
+    height: 50px;
+    width: 220px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background-color: #dfdfdf ;
+    color: #ef672a;
+}
+
+.Success {
+    background-color: #ef672a;
+}
+
+.Cancel {
+    background-color: #cac8c7;
+}
+
+.ToastButton {
+    border: none;
+    align-items: center;
+    height: auto;
+    width: 100px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+} 
+
+.ToastButton:hover {
+    background-color: #dfdfdf ;
+    color: #ef672a;
+}
+
+@media (max-width: 500px) {
+    .Button {
+        border: none;
+        height: 30px;
+        width: 110px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+ 
+}
+

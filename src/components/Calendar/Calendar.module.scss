@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+table {
+    border: 1px solid rgba(216, 216, 216, 0.4);
+    padding: 20px;
+}
+
+.TimeColumn {
+    width: 200px;
+    height: 40px;
+    text-align: center;    
+}
+
+.DateRow {
+    padding: 5px;
+    width: 100px;
+    height: auto;
+}
+
+.PrevBtn,
+.NextBtn {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+    width: 50px;
+}
+
+// .PrevBtn > svg,
+// .NextBtn > svg{
+//     font-size: 30px;    
+// }
+
+.PrevBtn:focus,
+.NextBtn:focus {
+    outline: 0;
+}
+
+th > span {
+    text-align: center;
+}
+
+.CalendarContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    // background-color: bisque;
+}
+
+.BookCheckoutBtn {
+    float: right;
+    padding-top: 10px;    
+}
+
+@media (max-width: 500px) {
+    .DateRow {
+        font-size: 12px;
+        width: 90px;
+    }
+
+    .TimeColumn {   
+        width: 150px;
+        height: 30px;
+        font-size: 12px;        
+    }
+
+    th > span {    
+        font-size: 12px;
+    }
+    .PrevBtn,
+    .NextBtn {
+        padding: 0;
+    }
+
+    .CalendarContainer {
+        margin: 0;
+    }
+    .CalendarContainer > table {
+        margin: 0 auto;
+    }
+
+    .BookCheckoutBtn {
+        padding-right: 27px;   
+    }
+}
+
+
+
+
+
+
+
+

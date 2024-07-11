@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NotAvailable {
+    background-color:   rgba(196, 196, 196, 0.4);
+    background-image: url(../../../assets//images/beat.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Available {
+    background-color: rgb(196, 196, 196);
+}
+
+.Selected {
+    background-color: burlywood;
+}
+
+// .CalendarSlot {
+//     height: 30px;
+//     width: auto;
+// }
+
+// @media (max-width: 500px) {
+//     .CalendarSlot {
+//         height: 20px;
+//         width: 40px;
+//     }
+// }

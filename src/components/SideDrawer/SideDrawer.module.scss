@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SideDrawerContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 140px;
+    background-color: #ffede6;
+    z-index: 600;
+    transition: 0.5s;
+    
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(100%);
+}
+
+.SideDrawerContainer > ul {
+    list-style: none;
+}
+
+.CloseBtn {
+    padding: 15px 15px 2px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: left;
+    svg {
+        vertical-align: middle;
+    }
+}
